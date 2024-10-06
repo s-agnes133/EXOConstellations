@@ -80,9 +80,7 @@ def scale_and_center_coordinates(data, scaling_factor=1e3):
 
 
 def create_visualization(transformed_data,exoplanet_names, scaling_factor=1e3):
-    """Tworzy wizualizację 3D gwiazd wokół egzoplanety z identycznymi zakresami osi."""
 
-    # Skalowanie i centrowanie współrzędnych
     transformed_data = scale_and_center_coordinates(transformed_data, scaling_factor)
 
     exoplanet_trace = go.Scatter3d(
