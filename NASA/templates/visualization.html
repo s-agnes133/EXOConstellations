@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>EXOConstellations - visualization</title>
+    <style>
+        body {
+            background: url('https://images.unsplash.com/photo-1516331138075-f3adc1e149cd?q=80&w=2416&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D%27') no-repeat center center fixed; /* Tło kosmosu */
+            background-size: cover; /* Dopasowanie tła do rozmiaru */
+            color: white; /* Kolor tekstu */
+            font-family: 'Arial', sans-serif;
+            height: 100vh; /* Wysokość całej strony */
+            display: flex; /* Użyj flexbox do centrowania */
+            justify-content: center; /* Wyśrodkowanie w poziomie */
+            align-items: center; /* Wyśrodkowanie w pionie */
+            text-align: center; /* Wyśrodkowanie tekstu */
+        }
+        h1 {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Cień dla nagłówka */
+        }
+        .visualization {
+            width: 100%; /* Szerokość kontenera wizualizacji */
+            max-width: 1500px; /* Maksymalna szerokość wizualizacji */
+            margin: 20px auto; /* Odstęp z góry i na dole */
+        }
+        a {
+            color: white; /* Kolor linków */
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Space visualization from the perspective of an exoplanet</h1>
+        <div class="visualization">
+            {% for visualization in visualizations %}
+            <div>
+                {{ visualization|safe }}
+            </div>
+            <hr>
+            {% endfor %}
+        </div>
+        <br>
+        <a href="/">Back</a>
+    </div>
+</body>
+</html>
