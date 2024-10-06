@@ -2,6 +2,7 @@
 
 Folder **NASA** includes web app files.
 
+Project made by: Agnieszka Sobieska, Justyna Sałacińska, Sandra Rawińska, Marcin Przestrzelski
 ## Main page
 ![image](https://github.com/user-attachments/assets/646f1015-1f07-4f3a-9300-4dd8e7f882f6)
 
